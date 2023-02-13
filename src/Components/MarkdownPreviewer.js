@@ -1,7 +1,12 @@
 import React from "react"
+import { EditorSection } from "./EditorSection";
+import { PreviewerSection } from "./PreviewerSection";
 
 export const MarkdownPreviewer = () => {
     return (
-    <h1>Hello World</h1>
+    <>
+        <EditorSection/>
+        <PreviewerSection/>
+    </>
     );
 }
