@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+:root {
+    --bg-color: rgb(135, 181, 181);
+    --bg-nav-color: rgb(74, 163, 163);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.editor-nav {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-nav-color);
+    width: 100%;
+    height: 2rem;
+    font-family: 'Russo one', sans-serif;
+}
+
+.editor-section {
+    width: 30vw;
+    background-color: red;
+    height: 25vh;
+    overflow: scroll;
+}
+
+#editor {
+    width: 100%;
+    height: 100%;
+}
