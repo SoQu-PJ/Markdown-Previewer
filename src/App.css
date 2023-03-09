@@ -26,6 +26,11 @@ body {
     height: 100vh;
 }
 
+.scale {
+    overflow: unset;
+    height: 100%;
+}
+
 /* editor section start */
 
 .editor-section {
@@ -38,6 +43,7 @@ body {
 .editor-nav {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     background-color: var(--bg-nav-color);
     height: 2rem;
     width: 100%;
@@ -52,6 +58,7 @@ body {
     border-radius: 0 0 0.3em 0.3em;
     min-height: 20vh;
     width: 100%;
+    overflow-y: auto;
 }
 
 /* editor section end */
@@ -67,12 +74,17 @@ body {
 .previewer-nav {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     background-color: var(--bg-nav-color);
     height: 2rem;
     width: 100%;
     font-family: 'Russo one', sans-serif;
     border: 1px solid black;
     border-radius: 0.3em 0.3em 0 0;
+}
+
+.markdown-section img {
+    width: 80%;
 }
 
 .markdown-section {
@@ -82,4 +94,11 @@ body {
     min-height: 20vh;
     width: calc(100% - 4rem);
     padding: 0 2rem;
+}
+
+/* icons */
+
+.fa-arrows-alt,
+.fa-compress {
+    cursor: pointer;
 }
