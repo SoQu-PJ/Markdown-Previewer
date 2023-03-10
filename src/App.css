@@ -83,10 +83,6 @@ body {
     border-radius: 0.3em 0.3em 0 0;
 }
 
-.markdown-section img {
-    width: 80%;
-}
-
 .markdown-section {
     background-color: var(--bg-markdown-section-color);
     border: 1px solid black;
@@ -96,9 +92,56 @@ body {
     padding: 0 2rem;
 }
 
+.markdown-section img {
+    width: 80%;
+}
+
+/* previewer section end */
+
 /* icons */
 
 .fa-arrows-alt,
 .fa-compress {
     cursor: pointer;
+}
+
+/* Responsive web  */
+
+@media (min-width: 375px) {
+    .markdown-previewer-section {
+        grid-template-columns: 5% 1fr 25% 30% 25% 1fr 5%;
+    }
+
+    .editor-section {
+        grid-column: 3 / span 3;
+    }
+
+    #preview {
+        grid-column: 2 / span 5;
+    }
+
+    .markdown-section {
+        font-size: 0.6rem;
+        overflow: scroll;
+    }
+}
+
+@media (min-width: 768px) {
+    .markdown-previewer-section {
+        grid-template-columns: 5% 1fr 10% 30% 10% 1fr 5%;
+    }
+
+    .editor-section {
+        grid-column: 3 / span 3;
+    }
+
+    #preview {
+        grid-column: 2 / span 5;
+    }
+}
+
+@media (min-width: 1400px) {
+    .markdown-section {
+        font-size: 1.5rem;
+    }
 }
